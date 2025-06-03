@@ -57,3 +57,26 @@ In this exercise, you will:
 Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/introduction-to-github) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
 
 &copy; 2024 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+
+---
+
+## Income Stream Manager
+
+This repository includes a Python GUI called **Income Stream Manager** located in `incomemanager/income_manager.py`. The application lists common online income categories and uses the OpenAI API to generate suggestions for each one. You can add your own categories, record income amounts, and view a summary of totals. Notes can be saved locally.
+
+### Usage
+
+1. Install the dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Set an environment variable named `OPENAI_API_KEY` with your OpenAI key to enable AI suggestions.
+3. Run the app:
+   ```bash
+   python -m incomemanager.income_manager
+   ```
+
+The GUI displays a list of income streams on the left. Selecting a category and clicking **Get Suggestions** queries OpenAI for tips. Use **Record Income** to log earnings for the selected category and **View Summary** to see totals. Use **Save Notes** to save your notes to `notes.txt`.
+
+This is an initial version and can be expanded with additional automation features for managing online income. Earnings are not guaranteed and depend on your own effort and market conditions.
+
